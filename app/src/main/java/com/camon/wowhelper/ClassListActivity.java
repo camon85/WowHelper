@@ -1,6 +1,7 @@
 package com.camon.wowhelper;
 
 import android.app.ListActivity;
+import android.content.res.AssetManager;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -11,6 +12,9 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import java.io.IOException;
+import java.io.InputStream;
+
 
 public class ClassListActivity extends ListActivity {
 
@@ -18,6 +22,15 @@ public class ClassListActivity extends ListActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_class_list);
+
+        AssetManager manager = getAssets();
+        InputStream open = null;
+        try {
+            open = manager.open("api");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
 
         // ArrayAdapter를 통해 LIST로 표시할 오브젝트를 지정한다.
         // 여기서는 심플하게 그냥 String
