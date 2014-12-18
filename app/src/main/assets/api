@@ -1,0 +1,100 @@
+http://eu.battle.net/api/wow/data/character/races?locale=fr_FR
+
+
+http://us.battle.net/api/wow/data/talents
+http://kr.battle.net/api/wow/data/talents
+
+
+http://kr.battle.net/api/wow/data/character/races
+http://kr.battle.net/api/wow/data/character/classes
+
+api/wow/data/item/classes
+
+
+
+
+
+http://us.battle.net/api/wow/spell/8056
+
+Spell API
+The spell API provides some information about spells.
+URL = Host + "/api/wow/spell/" + SpellId
+Example URL
+/api/wow/spell/8056
+Example Data
+spell.json
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+{
+    "castTime": "Instant", 
+    "cooldown": "6 sec cooldown", 
+    "description": "Instantly shocks an enemy with frost, dealing 1,344 Frost damage and reducing the target's movement speed by 50%. Lasts 8 sec. Causes a high amount of threat.", 
+    "icon": "spell_frost_frostshock", 
+    "id": 8056, 
+    "name": "Frost Shock", 
+    "powerCost": "21% of base mana", 
+    "range": "25 yd range"
+}
+
+
+
+
+
+
+
+
+
+
+
+Data Resources
+The data APIs provide information that can compliment profile information to provide structure, definition and context.
+
+Battlegroups
+The battlegroups data API provides the list of battlegroups for this region. Please note the trailing / on this request url.
+http://kr.battle.net/api/wow/data/battlegroups/
+
+Character Races
+The character races data API provides a list of character races.
+http://kr.battle.net/api/wow/data/character/races
+
+Character Classes
+The character classes data API provides a list of character classes.
+http://kr.battle.net/api/wow/data/character/classes
+
+Character Achievements
+The character achievements data API provides a list of all of the achievements that characters can earn as well as the category structure and hierarchy.
+http://kr.battle.net/api/wow/data/character/achievements
+
+Guild Rewards
+The guild rewards data API provides a list of all guild rewards.
+http://kr.battle.net/api/wow/data/guild/rewards
+
+Guild Perks
+The guild perks data API provides a list of all guild perks.
+http://kr.battle.net/api/wow/data/guild/perks
+
+Guild Achievements
+The guild achievements data API provides a list of all of the achievements that guilds can earn as well as the category structure and hierarchy.
+http://kr.battle.net/api/wow/data/guild/achievements
+
+Item Classes
+The item classes data API provides a list of item classes.
+http://kr.battle.net/api/wow/data/item/classes
+
+Talents
+The talents data API provides a list of talents, specs and glyphs for each class.
+http://kr.battle.net/api/wow/data/talents
+
+Pet Types
+The different bat pet types (including what they are strong and weak against)
+http://kr.battle.net/api/wow/data/pet/types
+
+
