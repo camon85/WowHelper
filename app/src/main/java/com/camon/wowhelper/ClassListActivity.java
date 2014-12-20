@@ -21,7 +21,7 @@ public class ClassListActivity extends ListActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_class_list);
+//        setContentView(R.layout.activity_class_list);
 
         AssetManager manager = getAssets();
         InputStream open = null;
