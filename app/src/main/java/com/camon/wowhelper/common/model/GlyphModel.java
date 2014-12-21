@@ -1,4 +1,5 @@
-package com.camon.wowhelper.model;
+package com.camon.wowhelper.common.model
+        ;
 
 public class GlyphModel {
     private String glyph;

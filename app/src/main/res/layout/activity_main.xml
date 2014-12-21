@@ -15,8 +15,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
     <Button
+        android:id="@+id/btn_talent"
+        android:text="문양"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
         android:id="@+id/btn_diminishing_returns"
-        android:text="점감표"
+        android:text="점감 테이블"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 

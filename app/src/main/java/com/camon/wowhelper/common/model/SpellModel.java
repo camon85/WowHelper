@@ -1,4 +1,4 @@
-package com.camon.wowhelper.model;
+package com.camon.wowhelper.common.model;
 
 public class SpellModel {
    private String id;
