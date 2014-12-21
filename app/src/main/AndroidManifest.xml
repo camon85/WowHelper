@@ -20,6 +20,14 @@
             android:name=".ClassListActivity"
             android:label="@string/title_activity_class_list" >
         </activity>
+        <activity
+            android:name=".TalentListActivity"
+            android:label="@string/title_activity_talent_list" >
+        </activity>
+        <activity
+            android:name=".SpecListActivity"
+            android:label="@string/title_activity_spec_list" >
+        </activity>
     </application>
 
 </manifest>

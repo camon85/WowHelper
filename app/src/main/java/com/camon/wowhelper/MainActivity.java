@@ -7,6 +7,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 
 public class MainActivity extends ActionBarActivity implements View.OnClickListener{
@@ -56,9 +57,14 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
     public void onClick(View v) {
         int id = v.getId();
 
-        if (R.id.btn_diminishing_returns == id) {
+        if (R.id.btn_skill == id) {
             Intent intent = new Intent(this, ClassListActivity.class);
             startActivity(intent);
+        } else if (R.id.btn_diminishing_returns == id) {
+//            Intent intent = new Intent(this, ClassListActivity.class);
+//            startActivity(intent);
+        } else {
+            Toast.makeText(this, "준비중", Toast.LENGTH_SHORT).show();
         }
     }
 }
