@@ -85,8 +85,12 @@ public class DataHandler {
         // TODO
         for (JsonElement talentEl : talentArray) {
             JsonArray tierArray = talentEl.getAsJsonArray();
-            List<TalentModel> tierList = gson.fromJson(tierArray, type);
-            talentList.addAll(tierList);
+            JsonObject column1 = tierArray.get(0).getAsJsonArray().get(0).getAsJsonObject();
+            JsonObject column2 = tierArray.get(1).getAsJsonArray().get(0).getAsJsonObject();
+            JsonObject column3 = tierArray.get(2).getAsJsonArray().get(0).getAsJsonObject();
+            talentList.add(gson.fromJson(column1, TalentModel.class));
+            talentList.add(gson.fromJson(column2, TalentModel.class));
+            talentList.add(gson.fromJson(column3, TalentModel.class));
         }
 
         return talentList;
