@@ -98,3 +98,64 @@ The different bat pet types (including what they are strong and weak against)
 http://kr.battle.net/api/wow/data/pet/types
 
 
+=====================
+talents
+ []0
+  []0
+   []0
+    tier:0
+    column:0
+    spell:무의존재
+  []1
+   []0
+    tier:0
+    column:1
+    spell:타오르는 속도
+  []2
+   []0
+    tier:0
+    column:2
+    spell:타오르는 속도
+[]1
+[]2
+[]3
+[]4
+[]5
+[]6      -- tier
+ []0     -- 칼럼
+  []0    -- 전문화
+   tier:6
+   column:0
+   spell:덧불
+  []1
+   tier:6
+   column:0
+   spell:열기 동공
+  []2
+   tier:6
+   column:0
+   spell:과부하
+ []1
+ []2
+
+레벨(tier), 선택칼럼, 전문화.
+
+
+
+
+작은아이콘
+<span xmlns="http://www.w3.org/1999/xhtml" class="icon-frame frame-18 " style="background-image: url(&quot;http://media.blizzard.com/wow/icons/18/ability_mage_wintersgrasp.jpg&quot;);">
+		</span>
+
+<span xmlns="http://www.w3.org/1999/xhtml" class="icon-frame frame-56 " style="background-image: url(&quot;http://media.blizzard.com/wow/icons/56/ability_mage_wintersgrasp.jpg&quot;);">
+		</span>
+
+
+큰아이콘
+<span xmlns="http://www.w3.org/1999/xhtml" class="icon-frame frame-18 " style="background-image: url(&quot;http://media.blizzard.com/wow/icons/18/ability_mage_brainfreeze.jpg&quot;);">
+		</span>
+<span xmlns="http://www.w3.org/1999/xhtml" class="icon-frame frame-56 " style="background-image: url(&quot;http://media.blizzard.com/wow/icons/56/ability_mage_brainfreeze.jpg&quot;);">
+		</span>
+
+
+

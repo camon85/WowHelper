@@ -30,8 +30,8 @@ public class DataHandler {
         BufferedReader br = null;
         StringBuilder sb = new StringBuilder();
 
-        String line;
         try {
+            String line;
             br = new BufferedReader(new InputStreamReader(is));
 
             while ((line = br.readLine()) != null) {
@@ -49,7 +49,9 @@ public class DataHandler {
             }
         }
 
-        return sb.toString();
+        String data = sb.toString();
+
+        return data.replaceAll("\\n","");
     }
 
     private static JsonObject toJsonObject(String data) {
@@ -82,7 +84,11 @@ public class DataHandler {
         List<TalentModel> talentList = new ArrayList<TalentModel>();
         JsonArray talentArray = talents.get(classId).getAsJsonObject().get("talents").getAsJsonArray();
 
-        // TODO
+        /**
+         * TODO
+         * .get(0).getAsJsonObject(); 이 부분 수정...
+         * talentColumn 에 해당하는 index 값을 꺼냈는데 null 이면 index 0의 값을 세팅
+          */
         for (JsonElement talentEl : talentArray) {
             JsonArray tierArray = talentEl.getAsJsonArray();
             JsonObject column1 = tierArray.get(0).getAsJsonArray().get(0).getAsJsonObject();
